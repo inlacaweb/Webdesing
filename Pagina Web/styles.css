@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #002d72;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px 25px 25px 25px; /* Esquinas onduladas a la izquierda */
+    border: 1px solid #ddd;
+    width: 1000px; /* Aumenta el tamaño */
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 25px 25px 25px 25px; /* Esquinas onduladas a la derecha */
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+.search-icon {
+    width: 40px;
+    height: 40px;
+    position: relative; /* Hace que el elemento sea posicionable en relación a su posición normal */
+    top: -13px; /* Mueve la imagen 5px hacia arriba */
+    right: -5px; /* Mueve la imagen 5px hacia la derecha */
+  }
+.logo-right img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    /* Estilos adicionales para los enlaces del menú */
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.productos {
+    padding: 20px;
+}
+
+.producto {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100px;
+    height: auto
+}
+  nav {
+    background-color: white;
+  }
+/* Estilo para el enlace "Nuevos Productos" */
+a[href="#nuevos-productos"] {
+  color: blue; /* Color del texto */
+  animation: blink 1s infinite; /* Animación de parpadeo */
+}
+
+/* Definición de la animación */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.search-container {
+    background-color: white;
+    border-radius: 10px 0 0 10px; /* Crea el efecto redondeado en la esquina izquierda */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 40px; /* Ajusta la altura según tus necesidades */
+    padding: 10px;
+  }
+  
+  .search-container input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px; /* Hereda el borde redondeado del contenedor */
+  }
+  .imagen-ampliable {
+    width: 1690px; /* Tamaño inicial de la imagen */
+    height: 800px; /* Mantiene la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor al hacer hover */
+  }
+  
+  .imagen-ampliable:hover {
+    opacity: 0.7; /* Efecto visual al pasar el ratón */
+  }
+  
+  .imagen-ampliada {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(primer_promocional.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9999; /* Asegúrate de que esté sobre otros elementos */
+    display: none; /* Inicialmente está oculta */
+  }
+ /*parte dos de codigo a realizar en productos inlaca*/
+ .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: calc(25% - 20px); /* Ajusta el ancho según la cantidad de columnas y el espacio entre ellas */
+  margin: 10px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+}

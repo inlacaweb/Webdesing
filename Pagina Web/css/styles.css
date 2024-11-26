@@ -1,0 +1,32 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para cada sección */
+#grupo-inlaca {
+    text-align: center;
+}
+
+/* Agrega estilos para las demás secciones */
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    nav ul {
+        flex-direction: column;
+    }
+}
